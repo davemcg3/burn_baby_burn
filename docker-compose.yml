@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    container_name: burn_baby_burn
+    restart: unless-stopped

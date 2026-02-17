@@ -3,7 +3,7 @@ import MeetingTemplate from './lib/views/meeting.js';
 import PastMeetingsTemplate from './lib/views/pastMeetings.js'
 import Warehouse from './lib/models/Warehouse.js';
 
-document.onDOMContentLoaded = (() => {
+document.addEventListener('DOMContentLoaded', () => {
     // page elements
     const attendeeInput = document.getElementById("inputAttendees");
     const wageInput = document.getElementById('inputHourlyRate');
@@ -95,4 +95,4 @@ document.onDOMContentLoaded = (() => {
         warehouse.remove();
         updatePastMeetings();
     });
-})();
+});
